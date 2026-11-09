@@ -1,0 +1,324 @@
+{
+  "generated_utc": "2026-11-09T17:50:38.276484+00:00",
+  "version": "6.2",
+  "warnings": [
+    "Historia BCH krótsza niż 2 lata; model 30d wymaga dłuższej próby",
+    "Historia zawiera luki poza ostatnimi 48h; model odrzuca okna obejmujące luki"
+  ],
+  "sources": {
+    "BCH-USD": {
+      "downloaded": 69,
+      "error": [],
+      "gap_hours_detected": 10,
+      "gap_hours_in_recent_48h_before_repair": 9,
+      "gap_definition": "Brakujące godziny między pierwszą i ostatnią zapisaną świecą",
+      "candles_stored": 11641
+    },
+    "BTC-USD": {
+      "downloaded": 69,
+      "error": [],
+      "gap_hours_detected": 10,
+      "gap_hours_in_recent_48h_before_repair": 9,
+      "gap_definition": "Brakujące godziny między pierwszą i ostatnią zapisaną świecą",
+      "candles_stored": 11641
+    },
+    "kraken": {
+      "spot_usd": 241.73,
+      "retrieved_utc": "2026-11-09T17:50:39.867406+00:00",
+      "vs_last_coinbase_close_pct": -0.06
+    }
+  },
+  "predictions": {
+    "1h": {
+      "status": "EKSPERYMENTALNE",
+      "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
+      "threshold_pct": 0.5,
+      "n_train": 6581,
+      "n_validation": 2126,
+      "n_test": 2328,
+      "selected_model": "regime",
+      "validation": {
+        "brier": 0.49416,
+        "accuracy_pct": 66.51,
+        "logloss": 0.8588
+      },
+      "validation_baseline": {
+        "brier": 0.502,
+        "accuracy_pct": 66.51,
+        "logloss": 0.8702
+      },
+      "test": {
+        "brier": 0.51546,
+        "accuracy_pct": 64.52,
+        "logloss": 0.88957
+      },
+      "test_baseline": {
+        "brier": 0.52311,
+        "accuracy_pct": 64.52,
+        "logloss": 0.89986
+      },
+      "validation_models": {
+        "momentum": {
+          "brier": 0.49869,
+          "accuracy_pct": 66.51,
+          "logloss": 0.86518
+        },
+        "relative": {
+          "brier": 0.49733,
+          "accuracy_pct": 66.51,
+          "logloss": 0.86295
+        },
+        "regime": {
+          "brier": 0.49416,
+          "accuracy_pct": 66.51,
+          "logloss": 0.8588
+        }
+      },
+      "return_interval_pct": [
+        -0.75,
+        0.75
+      ],
+      "test_interval_coverage_pct": 78.82,
+      "interval_note": "Zakres oparty na treningu i dostrojony na walidacji; pokrycie ocenione na teście, nie jest gwarancją",
+      "price_interval_pln_reference": [
+        941.0,
+        955.17
+      ],
+      "model_estimates_pct": {
+        "SPADEK": 11.7,
+        "STABILIZACJA": 75.0,
+        "WZROST": 13.3
+      },
+      "estimated_direction": "STABILIZACJA",
+      "probabilities_calibrated": false,
+      "probability_note": "Wartości modelowe nie są skalibrowanymi prawdopodobieństwami zdarzeń.",
+      "reason": "Lepszy Brier od benchmarku na walidacji i teście; kalibracja nadal niepotwierdzona",
+      "price_interval_anchor": "ostatnia zamknięta świeca Coinbase BCH-USD × NBP USD/PLN"
+    },
+    "24h": {
+      "status": "NIEPOTWIERDZONE",
+      "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
+      "threshold_pct": 2.5,
+      "n_train": 6535,
+      "n_validation": 88,
+      "n_test": 97,
+      "selected_model": "relative",
+      "validation": {
+        "brier": 0.55281,
+        "accuracy_pct": 61.36,
+        "logloss": 0.94425
+      },
+      "validation_baseline": {
+        "brier": 0.55011,
+        "accuracy_pct": 61.36,
+        "logloss": 0.93609
+      },
+      "test": {
+        "brier": 0.51,
+        "accuracy_pct": 64.95,
+        "logloss": 0.87875
+      },
+      "test_baseline": {
+        "brier": 0.51677,
+        "accuracy_pct": 64.95,
+        "logloss": 0.89081
+      },
+      "validation_models": {
+        "momentum": {
+          "brier": 0.55443,
+          "accuracy_pct": 61.36,
+          "logloss": 0.94892
+        },
+        "relative": {
+          "brier": 0.55281,
+          "accuracy_pct": 61.36,
+          "logloss": 0.94425
+        },
+        "regime": {
+          "brier": 0.55557,
+          "accuracy_pct": 61.36,
+          "logloss": 0.9483
+        }
+      },
+      "return_interval_pct": [
+        -4.52,
+        4.38
+      ],
+      "test_interval_coverage_pct": 81.44,
+      "interval_note": "Zakres oparty na treningu i dostrojony na walidacji; pokrycie ocenione na teście, nie jest gwarancją",
+      "price_interval_pln_reference": [
+        905.29,
+        989.62
+      ],
+      "model_estimates_pct": {
+        "SPADEK": 17.7,
+        "STABILIZACJA": 68.2,
+        "WZROST": 14.1
+      },
+      "estimated_direction": "STABILIZACJA",
+      "probabilities_calibrated": false,
+      "probability_note": "Wartości modelowe nie są skalibrowanymi prawdopodobieństwami zdarzeń.",
+      "reason": "Brak potwierdzonej przewagi Brier nad benchmarkiem; szacunki nie są sygnałem transakcyjnym",
+      "price_interval_anchor": "ostatnia zamknięta świeca Coinbase BCH-USD × NBP USD/PLN"
+    },
+    "7d": {
+      "status": "NIEPOTWIERDZONE",
+      "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
+      "threshold_pct": 7.0,
+      "n_train": 6247,
+      "n_validation": 12,
+      "n_test": 13,
+      "reason": "Za mało niezależnych okresów walidacji/testu (minimum 30)"
+    },
+    "30d": {
+      "status": "NIEPOTWIERDZONE",
+      "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
+      "threshold_pct": 15.0,
+      "n_train": 5143,
+      "n_validation": 2,
+      "n_test": 3,
+      "reason": "Za mało niezależnych okresów walidacji/testu (minimum 30)"
+    }
+  },
+  "fx": {
+    "rate": 3.9199,
+    "effective_date": "2026-11-09",
+    "source": "NBP table A"
+  },
+  "bch": {
+    "last_closed_candle_utc": "2026-11-09T16:00:00+00:00",
+    "usd": 241.87,
+    "volume_bch_1h": 738.4355655,
+    "rsi14": 49.15254237288137,
+    "ema20": 241.8480063073289,
+    "ema50": 246.2221145345452,
+    "atr14_usd": 2.471428571428567,
+    "macd_approx_usd": -0.8761222105492834,
+    "hourly_volatility_pct": 0.788,
+    "pln_reference": 948.11,
+    "bch_btc": 0.0032260499767652914
+  },
+  "technical_pro": {
+    "ema20_usd": 241.848,
+    "ema50_usd": 246.2221,
+    "ema200_usd": 263.1992,
+    "macd_usd": -0.87612,
+    "macd_signal_usd": -1.60277,
+    "macd_histogram_usd": 0.72664,
+    "volume_1h_bch": 738.436,
+    "volume_24h_bch": 10356.095,
+    "volume_24h_vs_previous_24h_pct": 1.1,
+    "return_24h_pct": -0.27,
+    "return_7d_pct": -12.36,
+    "trend_ema": "MIESZANY",
+    "supports_pln": [
+      943.76,
+      923.25,
+      923.21
+    ],
+    "resistances_pln": [
+      952.73,
+      959.36,
+      965.82
+    ],
+    "levels_method": "Potwierdzone lokalne ekstrema 5 świec 1h, 30 dni; bez oceny siły poziomów"
+  },
+  "model_status": "Model badawczy; ocena poza próbą, bez potwierdzonej kalibracji; brak rekomendacji inwestycyjnej",
+  "data_quality": {
+    "bch_last_candle_utc": "2026-11-09T16:00:00+00:00",
+    "bch_age_hours": 1.84,
+    "bch_candle_gaps_1h": 10,
+    "btc_candle_gaps_1h": 10,
+    "fx_effective_date": "2026-11-09"
+  },
+  "orderbook": {
+    "retrieved_utc": "2026-11-09T17:50:39.989483+00:00",
+    "best_bid_usd": 241.6,
+    "best_ask_usd": 241.61,
+    "spread_pct": 0.0041,
+    "depth_bid_bch_within_1pct": 1493.677,
+    "depth_ask_bch_within_1pct": 611.143,
+    "imbalance_pct": 41.93,
+    "note": "Migawka zleceń, nie potwierdza transakcji ani przyszłego kierunku"
+  },
+  "market_context": {
+    "retrieved_utc": "2026-11-09T17:50:40.171549+00:00",
+    "btc_dominance_pct": 59.56,
+    "total_market_cap_usd": 2505240795450,
+    "total_volume_24h_usd": 88231747790
+  },
+  "unavailable_data": [
+    "Likwidacje i open interest BCH: brak zweryfikowanego źródła w tej wersji",
+    "Funding rate: brak zweryfikowanego źródła w tej wersji",
+    "On-chain BCH: brak zweryfikowanego źródła w tej wersji",
+    "Makro, wiadomości i Revolut X: brak automatycznej walidacji w tej wersji",
+    "CVD: brak strumienia transakcji i klasyfikacji agresora",
+    "4h i 1d: można agregować z kompletnych świec 1h, nie jest to osobny feed"
+  ],
+  "predictions_baseline_v2": {
+    "1h": {
+      "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
+      "direction": "STABILIZACJA",
+      "probability_train_pct": 68.2,
+      "test_accuracy_pct": 64.5,
+      "test_majority_baseline_pct": 64.5,
+      "n_train": 9311,
+      "n_test": 2328,
+      "threshold_pct": 0.5,
+      "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
+    },
+    "24h": {
+      "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
+      "direction": "STABILIZACJA",
+      "probability_train_pct": 64.3,
+      "test_accuracy_pct": 63.3,
+      "test_majority_baseline_pct": 63.3,
+      "n_train": 9288,
+      "n_test": 2305,
+      "threshold_pct": 2.5,
+      "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
+    },
+    "7d": {
+      "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
+      "direction": "STABILIZACJA",
+      "probability_train_pct": 61.8,
+      "test_accuracy_pct": 49.7,
+      "test_majority_baseline_pct": 49.7,
+      "n_train": 9144,
+      "n_test": 2161,
+      "threshold_pct": 7.0,
+      "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
+    },
+    "30d": {
+      "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
+      "direction": "STABILIZACJA",
+      "probability_train_pct": 70.6,
+      "test_accuracy_pct": 44.9,
+      "test_majority_baseline_pct": 47.2,
+      "n_train": 8592,
+      "n_test": 1609,
+      "threshold_pct": 15.0,
+      "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
+    }
+  },
+  "freshness": {
+    "bch_age_hours": 1.84,
+    "stale": false
+  },
+  "price_reference": {
+    "last_closed_coinbase_usd": 241.87,
+    "last_closed_coinbase_utc": "2026-11-09T16:00:00+00:00",
+    "last_closed_coinbase_pln_nbp_reference": 948.11,
+    "kraken_spot_usd": 241.73,
+    "kraken_spot_retrieved_utc": "2026-11-09T17:50:39.867406+00:00",
+    "kraken_spot_pln_nbp_reference": 947.56,
+    "usdpln_nbp_reference": 3.9199,
+    "usdpln_effective_date": "2026-11-09",
+    "warning": "NBP to kurs referencyjny z dnia publikacji, nie bieżący kurs FX ani cena wykonania transakcji"
+  },
+  "cross_exchange": {
+    "kraken_vs_coinbase_close_pct": 0.06,
+    "large_discrepancy": false
+  },
+  "action": "BRAK SYGNALU TRANSAKCYJNEGO"
+}
