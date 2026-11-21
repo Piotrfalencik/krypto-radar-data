@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-21T09:00:14.524972+00:00",
+  "generated_utc": "2026-11-21T17:00:11.573760+00:00",
   "version": "6.2",
   "warnings": [
     "Historia BCH krótsza niż 2 lata; model 30d wymaga dłuższej próby",
@@ -12,7 +12,7 @@
       "gap_hours_detected": 10,
       "gap_hours_in_recent_48h_before_repair": 1,
       "gap_definition": "Brakujące godziny między pierwszą i ostatnią zapisaną świecą",
-      "candles_stored": 11921
+      "candles_stored": 11929
     },
     "BTC-USD": {
       "downloaded": 53,
@@ -20,11 +20,11 @@
       "gap_hours_detected": 10,
       "gap_hours_in_recent_48h_before_repair": 1,
       "gap_definition": "Brakujące godziny między pierwszą i ostatnią zapisaną świecą",
-      "candles_stored": 11921
+      "candles_stored": 11929
     },
     "kraken": {
-      "spot_usd": 187.01,
-      "retrieved_utc": "2026-11-21T09:00:17.029515+00:00",
+      "spot_usd": 197.83,
+      "retrieved_utc": "2026-11-21T17:00:15.686359+00:00",
       "vs_last_coinbase_close_pct": -0.02
     }
   },
@@ -33,61 +33,61 @@
       "status": "EKSPERYMENTALNE",
       "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
       "threshold_pct": 0.5,
-      "n_train": 6749,
-      "n_validation": 2182,
-      "n_test": 2384,
+      "n_train": 6754,
+      "n_validation": 2184,
+      "n_test": 2385,
       "selected_model": "regime",
       "validation": {
-        "brier": 0.48685,
-        "accuracy_pct": 67.19,
-        "logloss": 0.84853
+        "brier": 0.48579,
+        "accuracy_pct": 67.31,
+        "logloss": 0.84707
       },
       "validation_baseline": {
-        "brier": 0.49509,
-        "accuracy_pct": 67.19,
-        "logloss": 0.86058
+        "brier": 0.49378,
+        "accuracy_pct": 67.31,
+        "logloss": 0.85876
       },
       "test": {
-        "brier": 0.55043,
-        "accuracy_pct": 61.37,
-        "logloss": 0.93912
+        "brier": 0.55222,
+        "accuracy_pct": 61.17,
+        "logloss": 0.94155
       },
       "test_baseline": {
-        "brier": 0.55735,
-        "accuracy_pct": 61.37,
-        "logloss": 0.9477
+        "brier": 0.55937,
+        "accuracy_pct": 61.17,
+        "logloss": 0.95051
       },
       "validation_models": {
         "momentum": {
-          "brier": 0.48966,
-          "accuracy_pct": 67.19,
-          "logloss": 0.85207
+          "brier": 0.48847,
+          "accuracy_pct": 67.31,
+          "logloss": 0.85042
         },
         "relative": {
-          "brier": 0.48934,
-          "accuracy_pct": 67.19,
-          "logloss": 0.85142
+          "brier": 0.4882,
+          "accuracy_pct": 67.31,
+          "logloss": 0.84985
         },
         "regime": {
-          "brier": 0.48685,
-          "accuracy_pct": 67.19,
-          "logloss": 0.84853
+          "brier": 0.48579,
+          "accuracy_pct": 67.31,
+          "logloss": 0.84707
         }
       },
       "return_interval_pct": [
-        -0.74,
+        -0.73,
         0.73
       ],
-      "test_interval_coverage_pct": 75.76,
+      "test_interval_coverage_pct": 75.39,
       "interval_note": "Zakres oparty na treningu i dostrojony na walidacji; pokrycie ocenione na teście, nie jest gwarancją",
       "price_interval_pln_reference": [
-        754.08,
-        765.2
+        797.72,
+        809.44
       ],
       "model_estimates_pct": {
-        "SPADEK": 24.4,
-        "STABILIZACJA": 49.1,
-        "WZROST": 26.5
+        "SPADEK": 25.2,
+        "STABILIZACJA": 53.8,
+        "WZROST": 21.0
       },
       "estimated_direction": "STABILIZACJA",
       "probabilities_calibrated": false,
@@ -99,61 +99,61 @@
       "status": "NIEPOTWIERDZONE",
       "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
       "threshold_pct": 2.5,
-      "n_train": 6703,
+      "n_train": 6708,
       "n_validation": 90,
       "n_test": 99,
       "selected_model": "relative",
       "validation": {
-        "brier": 0.52223,
+        "brier": 0.52234,
         "accuracy_pct": 64.44,
-        "logloss": 0.90033
+        "logloss": 0.90057
       },
       "validation_baseline": {
-        "brier": 0.52129,
+        "brier": 0.52132,
         "accuracy_pct": 64.44,
-        "logloss": 0.89659
+        "logloss": 0.89666
       },
       "test": {
-        "brier": 0.54791,
-        "accuracy_pct": 61.62,
-        "logloss": 0.93478
+        "brier": 0.57493,
+        "accuracy_pct": 59.6,
+        "logloss": 0.97529
       },
       "test_baseline": {
-        "brier": 0.54854,
-        "accuracy_pct": 61.62,
-        "logloss": 0.93448
+        "brier": 0.56789,
+        "accuracy_pct": 59.6,
+        "logloss": 0.96124
       },
       "validation_models": {
         "momentum": {
-          "brier": 0.5248,
+          "brier": 0.52478,
           "accuracy_pct": 64.44,
-          "logloss": 0.90703
+          "logloss": 0.90699
         },
         "relative": {
-          "brier": 0.52223,
+          "brier": 0.52234,
           "accuracy_pct": 64.44,
-          "logloss": 0.90033
+          "logloss": 0.90057
         },
         "regime": {
-          "brier": 0.52262,
+          "brier": 0.5233,
           "accuracy_pct": 64.44,
-          "logloss": 0.90064
+          "logloss": 0.90291
         }
       },
       "return_interval_pct": [
         -4.34,
         4.23
       ],
-      "test_interval_coverage_pct": 76.77,
+      "test_interval_coverage_pct": 77.78,
       "interval_note": "Zakres oparty na treningu i dostrojony na walidacji; pokrycie ocenione na teście, nie jest gwarancją",
       "price_interval_pln_reference": [
-        726.72,
-        791.81
+        768.76,
+        837.63
       ],
       "model_estimates_pct": {
-        "SPADEK": 18.6,
-        "STABILIZACJA": 62.6,
-        "WZROST": 18.8
+        "SPADEK": 23.2,
+        "STABILIZACJA": 62.3,
+        "WZROST": 14.4
       },
       "estimated_direction": "STABILIZACJA",
       "probabilities_calibrated": false,
@@ -165,7 +165,7 @@
       "status": "NIEPOTWIERDZONE",
       "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
       "threshold_pct": 7.0,
-      "n_train": 6415,
+      "n_train": 6420,
       "n_validation": 12,
       "n_test": 14,
       "reason": "Za mało niezależnych okresów walidacji/testu (minimum 30)"
@@ -174,7 +174,7 @@
       "status": "NIEPOTWIERDZONE",
       "method": "V6: probabilistyczne modele warunkowe, chronologiczne 60/20/20, benchmark Brier, test niezależny",
       "threshold_pct": 15.0,
-      "n_train": 5311,
+      "n_train": 5316,
       "n_validation": 2,
       "n_test": 3,
       "reason": "Za mało niezależnych okresów walidacji/testu (minimum 30)"
@@ -186,64 +186,66 @@
     "source": "NBP table A"
   },
   "bch": {
-    "last_closed_candle_utc": "2026-11-21T08:00:00+00:00",
-    "usd": 187.05,
-    "volume_bch_1h": 284.14018236,
-    "rsi14": 43.35225575141919,
-    "ema20": 191.30885698264072,
-    "ema50": 197.15514051065554,
-    "atr14_usd": 4.047142857142859,
-    "macd_approx_usd": -3.7997541857346846,
-    "hourly_volatility_pct": 1.005,
-    "pln_reference": 759.67,
-    "bch_btc": 0.003242170085577344
+    "last_closed_candle_utc": "2026-11-21T16:00:00+00:00",
+    "usd": 197.87,
+    "volume_bch_1h": 184.33103514,
+    "rsi14": 56.66074600355239,
+    "ema20": 193.67735013186092,
+    "ema50": 196.6103985766093,
+    "atr14_usd": 4.365714285714284,
+    "macd_approx_usd": 0.18375648461790206,
+    "hourly_volatility_pct": 1.038,
+    "pln_reference": 803.61,
+    "bch_btc": 0.003300949429594871
   },
   "technical_pro": {
-    "ema20_usd": 191.3089,
-    "ema50_usd": 197.1551,
-    "ema200_usd": 209.9216,
-    "macd_usd": -3.79975,
-    "macd_signal_usd": -3.66355,
-    "macd_histogram_usd": -0.1362,
-    "volume_1h_bch": 284.14,
-    "volume_24h_bch": 22004.952,
-    "volume_24h_vs_previous_24h_pct": 163.75,
-    "return_24h_pct": -7.36,
-    "return_7d_pct": -12.74,
-    "trend_ema": "SPADEK",
+    "ema20_usd": 193.6774,
+    "ema50_usd": 196.6104,
+    "ema200_usd": 208.7696,
+    "macd_usd": 0.18376,
+    "macd_signal_usd": -1.49781,
+    "macd_histogram_usd": 1.68157,
+    "volume_1h_bch": 184.331,
+    "volume_24h_bch": 18684.383,
+    "volume_24h_vs_previous_24h_pct": 30.66,
+    "return_24h_pct": 3.75,
+    "return_7d_pct": -4.62,
+    "trend_ema": "MIESZANY",
     "supports_pln": [
-      729.17
+      794.72,
+      762.75,
+      762.39
     ],
     "resistances_pln": [
-      770.59,
-      784.64,
-      790.94
+      818.64,
+      841.18,
+      843.61
     ],
     "levels_method": "Potwierdzone lokalne ekstrema 5 świec 1h, 30 dni; bez oceny siły poziomów"
   },
   "model_status": "Model badawczy; ocena poza próbą, bez potwierdzonej kalibracji; brak rekomendacji inwestycyjnej",
   "data_quality": {
-    "bch_last_candle_utc": "2026-11-21T08:00:00+00:00",
+    "bch_last_candle_utc": "2026-11-21T16:00:00+00:00",
     "bch_age_hours": 1.0,
     "bch_candle_gaps_1h": 10,
     "btc_candle_gaps_1h": 10,
     "fx_effective_date": "2026-11-20"
   },
   "orderbook": {
-    "retrieved_utc": "2026-11-21T09:00:17.193834+00:00",
-    "best_bid_usd": 187.05,
-    "best_ask_usd": 187.16,
-    "spread_pct": 0.0588,
-    "depth_bid_bch_within_1pct": 1577.368,
-    "depth_ask_bch_within_1pct": 864.126,
-    "imbalance_pct": 29.21,
+    "retrieved_utc": "2026-11-21T17:00:15.842318+00:00",
+    "best_bid_usd": 197.6,
+    "best_ask_usd": 197.69,
+    "spread_pct": 0.0455,
+    "depth_bid_bch_within_1pct": 1851.335,
+    "depth_ask_bch_within_1pct": 1023.199,
+    "imbalance_pct": 28.81,
     "note": "Migawka zleceń, nie potwierdza transakcji ani przyszłego kierunku"
   },
   "market_context": {
-    "retrieved_utc": "2026-11-21T09:00:19.306738+00:00",
-    "btc_dominance_pct": 57.62,
-    "total_market_cap_usd": 2027382745018,
-    "total_volume_24h_usd": 146557521644
+    "retrieved_utc": "2026-11-21T17:00:19.675835+00:00",
+    "btc_dominance_pct": 57.9,
+    "total_market_cap_usd": 2081951248638,
+    "total_volume_24h_usd": 138174800350
   },
   "unavailable_data": [
     "Likwidacje i open interest BCH: brak zweryfikowanego źródła w tej wersji",
@@ -258,10 +260,10 @@
       "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
       "direction": "STABILIZACJA",
       "probability_train_pct": 68.7,
-      "test_accuracy_pct": 61.4,
-      "test_majority_baseline_pct": 61.4,
-      "n_train": 9535,
-      "n_test": 2384,
+      "test_accuracy_pct": 61.2,
+      "test_majority_baseline_pct": 61.2,
+      "n_train": 9542,
+      "n_test": 2385,
       "threshold_pct": 0.5,
       "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
     },
@@ -269,10 +271,10 @@
       "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
       "direction": "STABILIZACJA",
       "probability_train_pct": 65.0,
-      "test_accuracy_pct": 60.7,
-      "test_majority_baseline_pct": 60.7,
-      "n_train": 9512,
-      "n_test": 2361,
+      "test_accuracy_pct": 60.5,
+      "test_majority_baseline_pct": 60.5,
+      "n_train": 9519,
+      "n_test": 2362,
       "threshold_pct": 2.5,
       "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
     },
@@ -280,21 +282,21 @@
       "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
       "direction": "STABILIZACJA",
       "probability_train_pct": 62.7,
-      "test_accuracy_pct": 38.8,
-      "test_majority_baseline_pct": 40.6,
-      "n_train": 9368,
-      "n_test": 2217,
+      "test_accuracy_pct": 39.0,
+      "test_majority_baseline_pct": 40.8,
+      "n_train": 9375,
+      "n_test": 2218,
       "threshold_pct": 7.0,
       "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
     },
     "30d": {
       "status": "BAZA_HISTORYCZNA_BEZ_PRZEWAGI",
       "direction": "STABILIZACJA",
-      "probability_train_pct": 71.3,
-      "test_accuracy_pct": 40.9,
-      "test_majority_baseline_pct": 40.9,
-      "n_train": 8816,
-      "n_test": 1665,
+      "probability_train_pct": 71.4,
+      "test_accuracy_pct": 40.5,
+      "test_majority_baseline_pct": 40.5,
+      "n_train": 8823,
+      "n_test": 1666,
       "threshold_pct": 15.0,
       "reason": "Częstości historyczne nie są skalibrowaną prognozą; wymagany model lepszy od benchmarku."
     }
@@ -304,12 +306,12 @@
     "stale": false
   },
   "price_reference": {
-    "last_closed_coinbase_usd": 187.05,
-    "last_closed_coinbase_utc": "2026-11-21T08:00:00+00:00",
-    "last_closed_coinbase_pln_nbp_reference": 759.67,
-    "kraken_spot_usd": 187.01,
-    "kraken_spot_retrieved_utc": "2026-11-21T09:00:17.029515+00:00",
-    "kraken_spot_pln_nbp_reference": 759.5,
+    "last_closed_coinbase_usd": 197.87,
+    "last_closed_coinbase_utc": "2026-11-21T16:00:00+00:00",
+    "last_closed_coinbase_pln_nbp_reference": 803.61,
+    "kraken_spot_usd": 197.83,
+    "kraken_spot_retrieved_utc": "2026-11-21T17:00:15.686359+00:00",
+    "kraken_spot_pln_nbp_reference": 803.45,
     "usdpln_nbp_reference": 4.0613,
     "usdpln_effective_date": "2026-11-20",
     "warning": "NBP to kurs referencyjny z dnia publikacji, nie bieżący kurs FX ani cena wykonania transakcji"
